@@ -128,6 +128,7 @@ async function weatherData(town){
   
 }
  weatherData("benha")
+
 dataLocation.addEventListener("click",function(){
 
     weatherData(locationTown.value)

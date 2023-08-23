@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wether</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="pic/logo2x.png" type="image/x-icon">
+</head>
+<body>
+  <nav id="nav" class="navbar navbar-expand-md  ">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-center align-items-center gap-2" href="#">
+        <div >
+        <img id="logo" src="pic/weather-icon.png">
+        </div>
+        <div class="text-white">
+          <small class="d-block">omar elsisi</small>
+          <small>omar whather </small>
+        </div>
+       
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="ms-5 collapse navbar-collapse" id="navbarNav">
+        <ul class="ms-auto navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link active text-white btn btn-outline-info rounded-pill px-2" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link btn btn-outline-info text-white rounded-pill px-2" href="#">News</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link btn btn-outline-info text-white rounded-pill px-2" href="#">Live camera</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link btn btn-outline-info text-white rounded-pill px-2" href="#">Photos</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link btn btn-outline-info text-white rounded-pill px-2" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  <div class="master  py-5">
+    <div class="container">
+      <div id="search " class="w-100 bg-black p-2 rounded-pill d-flex justify-content-between align-items-center ms-2">
+        <input id="locationTown" type="text" placeholder="find your location" class="w-100 p-2 d-block">
+        <button id="dataLocation"  class="btn btn-info rounded-pill px-4">find</button>
+      </div>
+      <div class="cardWeather">
+        <div class="container">
+          <div class="row py-sm-5">
+            <div class="col-sm-12 col-md-6 col-lg-4 my-3 ">
+              <div class="ineer ">
+                <div id="today" class="card  text-white vh-50">
+                  <div id="todayHead" class="card-header d-flex justify-content-between align-items-center ">
+                    <p id="tobayName">day</p>
+                    <p ><span id="todayDate">day</span> <span id="todayMonth">month</span></p>
+                  </div>
+                  <div  id="todayBody" class="card-body d-flex flex-column justify-content-around align-items-sm-start">
+                    <p id="townName" class="text-secondary">cairo</p>
+                    <div class="d-flex justify-content-around align-items-start">
+                      <h1  class="fa-3x my-auto"><span id="todayDegree">39</span><sup>o</sup>c</h1>
+                      <img id="todayPhoto" src="pic/113.webp"  class="my-auto ">
+                    </div>
+                    <p id="todayStatue" class="text-primary opacity-75 py-1">sunny</p>
+                    <div class="d-flex justify-content-evenly align-items-center text-secondary">
+                      <div class="d-flex justify-content-center align-items-center g-2">
+                        <i class="fa-solid fa-umbrella my-auto mx-2"></i>
+                        <p class="my-auto"><span id="todayHumdity">20</span>%</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center g-2">
+                        <i class="fa-solid fa-wind my-auto mx-2"></i>
+                        <p class="my-auto"><span id="todayWindSpead">10</span> km/hr</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center g-2">
+                        <i class="fa-regular fa-compass my-auto mx-2"></i>
+                        <p class="my-auto"><span id="todayWindDirection">EN</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+            <div class="ineer  ">
+              <div id="Nextday" class="card text-center text-white vh-50 ">
+                <div id="NextdayHead" class="card-header  ">
+                  <p id="nameNextday">next day</p>
+                </div>
+                <div  id="NextdayBody" class="card-body py-4 d-flex flex-column align-items-center justify-content-around">
+                  <img id="picNextDay" src="pic/weather-icon.png"   style="width: 50px;">
+                  <h4 class="py-2" ><span id="maxDegNextDay">40</span><sup>o</sup>c</h4>
+                  <p class="text-secondary"><span id="minDegNextDay">29</span><sup>o</sup>c</p>
+                  <p id="statueNextDay" class="text-primary opacity-75">sunny</p>
+                </div>
+                
+              </div>
+            </div>
+          
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+          <div class="ineer ">
+            <div id="nNextday" class="card text-center text-white  vh-50">
+              <div id="nNextdayHead" class="card-header  ">
+                <p id="namenNextday">next next day</p>
+              </div>
+              <div  id="nNextday" class="card-body py-4 d-flex flex-column align-items-center justify-content-around">
+                <img id="picnNextDay" src="pic/weather-icon.png"   style="width: 50px;">
+                <h4 class="py-2"> <span id="maxDegnNextDay">42</span><sup>o</sup>c</h4>
+                <p class="text-secondary" ><span id="minDegnNextDay">29</span><sup>o</sup>c</p>
+                <p id="statuenNextDay" class="text-primary opacity-75">sunny</p>
+              </div>
+              
+            </div>
+          </div>
+        
+      </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="footer py-5">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-12 col-md-6 my-3 ">
+        <div class="ineer">
+          <div id="subscribe " class="w-100 bg-black p-2 rounded-pill d-flex justify-content-between align-items-center ms-2">
+            <input id="email" type="email" placeholder="Enter Your email to subscribe..." class="w-100 p-2 d-block">
+            <button id="SubscribeBtn"  class="btn btn-info rounded-pill px-4">subscribe</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-sm-12 col-md-6 my-3 ">
+        <div class="ineer">
+          <div class="social-links d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/profile.php?id=100006907080172" class="mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-ehab-el-sisi-4946a2161/" class="mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:mohamed.elsysey@gmail.com" class="mx-2 d-flex justify-content-center align-items-center"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#" class="mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 my-3 ">
+        <div class="ineer">
+          <p class="text-secondary">Copyright 2014 omar el-Sisi. Designed by Omar El-sisi. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+ 
+    
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
